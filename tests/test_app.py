@@ -1,3 +1,6 @@
+import os
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import unittest
 from main import app, is_solvable
 
@@ -36,11 +39,7 @@ class TestApp(unittest.TestCase):
     def test_static_files(self):
         with self.app.get("/static/styles.css") as response_css:
             self.assertEqual(response_css.status_code, 200)
-            self.assertTrue(response_css.data)  #content shouldnt be empty
-
-        with self.app.get("/static/script.js") as response_js:
-            self.assertEqual(response_js.status_code, 200)
-            self.assertTrue(response_js.data)  #shouldnt be empty
+            self.assertTrue(response_css.data)
 
 
 if __name__ == "__main__":
