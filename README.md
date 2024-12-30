@@ -2,7 +2,7 @@
 
 This project implements a classic sliding puzzle game where the goal is to arrange tiles in order, either numerically or alphabetically, within a 4x4 grid. The puzzle is built using Python Flask for the backend and HTML and CSS for the frontend.  
 
-##Features  
+## Features  
 
 Interactive Gameplay: Click tiles to move them within the grid.  
 Solvable Puzzles: Ensures every generated puzzle configuration is solvable.  
@@ -10,9 +10,9 @@ Attractive UI/UX: Intuitive and visually appealing design, suitable for first-ti
 Robust Error Handling: Prevents crashes or freezes during gameplay.  
 Unit Testing: Comprehensive test cases for backend functionality.  
 
-##Installation  
+## Installation  
 Clone the repository:  
-git clone https://github.com/yourusername/15-tile-puzzle.git](https://github.com/Shreya1293/15_tile_puzzle_tekzen.git)  
+git clone https://github.com/Shreya1293/15_tile_puzzle_tekzen.git
   
 go to the project directory:  
 cd 15-tile-puzzle  
@@ -25,7 +25,7 @@ Open your browser and navigate to the given Local host URL
 for testing the unit test cases:  
 python -m unittest test_app.py  
   
-##Project Structure  
+## Project Structure  
   
 15-tile-puzzle/  
 ├── static/  
