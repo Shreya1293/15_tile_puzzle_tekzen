@@ -67,5 +67,10 @@ def reset():
     session["empty_index"]=session["puzzle"].index(0)
     return redirect(url_for("index"))
 
+@app.route("/generate-puzzle")
+def generate_puzzle():
+    puzzle = generate_solvable_puzzel()
+    return {"puzzle": puzzle}
+
 if __name__=="__main__":
     app.run(host="0.0.0.0",port=5000,debug=True)
