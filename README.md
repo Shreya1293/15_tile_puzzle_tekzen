@@ -23,6 +23,7 @@ python main.py
 Open your browser and navigate to the given Local host URL  
 
 for testing the unit test cases:  
+(move the test_app.py file to the directory where main.py is located)  
 python -m unittest test_app.py  
   
 ## Project Structure  
